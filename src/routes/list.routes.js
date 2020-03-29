@@ -5,5 +5,5 @@ module.exports = (app) => {
     app.get('/list', list.findAll);
     app.get('/list/:listId', list.findOne);
     app.put('/list/:listId', list.update);
-    app.delete('/list/:listId', list.delete);
+    app.delete('/list/:listId', list.delete);  
 }

@@ -1,7 +1,10 @@
 const mongoose = require('mongoose');
+const TodoSchema = require('../models/todo.model.js');
+
 
 const ListSchema = mongoose.Schema({
-    name: String
+    name: String,
+    todos: [TodoSchema]
 }, {
     timestamps: true
 });

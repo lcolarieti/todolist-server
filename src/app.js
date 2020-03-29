@@ -22,6 +22,7 @@ mongoose.Promise = global.Promise;
 
 // listen for requests
 require('./routes/list.routes.js')(app);
+require('./routes/todo.routes.js')(app);
 app.listen(3001, () => {
     console.log("Server is listening on port 3001");
 });
